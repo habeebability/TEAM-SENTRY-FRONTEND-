@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap:400,700,900");
 
 $submit-btn-color: #eba12f;
 $white: #fff;
@@ -50,9 +50,10 @@ $border-radius: 3px;
       text-align: center;
       font-size: 1.7em;
       line-height: 2em;
-      font-weight: 900;
+      font-weight: 1900;
       color: $white;
       padding: 0 0.7em;
+      letter-spacing: 1.5px;
 
       @include bp(mobile) {
         padding: 0 0.5em;
