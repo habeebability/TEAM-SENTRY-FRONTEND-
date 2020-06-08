@@ -23,8 +23,8 @@
 .hero::before {
   content: "";
   position: absolute;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.1);
