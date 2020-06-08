@@ -1,0 +1,82 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* This is used to set the size of 1rem 62.5= 16px */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.accns-header{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    height: 70vh;
+    background-image: url(./accomodations.background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+.accns-heading{
+    text-transform: capitalize;
+    margin-bottom: 2%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    /* identical to box height, or 95% */
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+}
+.accns-grid{
+    display: grid;
+    grid-template-columns:  40% 40%/*repeat(auto-fill, minmax(500px, 1fr))*/;
+    grid-gap: 20%;
+    margin: 4%;
+    
+
+}
+
+.accns-left, .accns-right {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: right;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.accns-left{
+    text-align: left;
+}
+
+@media screen and (max-device-width: 530px), screen and (max-width:530px) {
+    .accns-grid {
+    display: block;
+    }
+    html {
+        font-size: 80%;
+    }
+    }
+
+@media screen and (max-device-width:380px), screen and (max-width:380px) {
+    .accns-grid {
+    display: block;
+    }
+    html {
+        font-size: 120%;
+    }
+    }
