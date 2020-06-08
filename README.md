@@ -13,7 +13,7 @@ Each sub-team lead [Team A,B,...] lead should create 5 folders which are:
 # page 4
 # page 5
 
-*Each branch will contain the 5 folders above*
+*Each Team branch will contain the 5 folders above*
 
 
 # TO-CONTRIBUTE:
