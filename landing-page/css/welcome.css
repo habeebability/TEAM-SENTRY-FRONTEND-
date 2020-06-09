@@ -41,6 +41,7 @@
   font-size: 1.8em;
   padding: 0 0.7em;
   margin: 1.5em 0;
+  margin-bottom: 0;
 }
 .flex-2-image {
   width: auto;
@@ -52,23 +53,19 @@
   padding: 0 2em;
   text-align: justify;
   max-width: 578px;
-  height: 225px;
-  line-height: 35px;
+  line-height: 25px;
+  margin-bottom: 0.7em;
 }
 @media (max-width: 500px) {
   .first-p {
-    position: relative;
-    margin-bottom: 40px;
-    margin: auto;
-    margin-top: 10px;
+    margin: 1.5em 0;
     max-width: 400px;
     font-weight: 300px;
     font-size: 15px;
-    bottom: 50px;
   }
   .pic-image {
     width: 25rem;
-    margin: 20px;
+    /* margin: 20px; */
   }
   .flex-2-image {
     width: 25rem;

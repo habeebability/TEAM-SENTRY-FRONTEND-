@@ -49,13 +49,14 @@
   .accns-grid {
     flex-direction: column;
     justify-content: left;
+    margin-top: 1em;
   }
 
   .accns-left,
   .accns-right {
     /*typography for left and right grid columns*/
     text-align: center !important;
-    margin: 2em 0;
+    margin: 1em 0;
   }
 }
 
