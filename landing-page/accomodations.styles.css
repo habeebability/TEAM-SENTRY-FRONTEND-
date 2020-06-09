@@ -1,19 +1,12 @@
 *, *::before, *::after{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
-html {
-    /* This is used to set the size of 1rem 62.5= 16px */
-    font-size: 62.5%;
-}
-
-body {
-    box-sizing: border-box;
-}
 
 .accns-header{
+    /*Div containing accomodations description*/
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 4%;
@@ -25,58 +18,61 @@ body {
     text-align: center;
 }
 .accns-heading{
+    /*Typography fo heading*/
+    box-sizing: border-box;
     text-transform: capitalize;
     margin-bottom: 2%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 4.2rem;
-    line-height: 4rem;
-    /* identical to box height, or 95% */
+    font-size: 42px;
+    line-height: 40px;
     text-align: center;
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
-
 }
+
+@media screen and (max-device-width: 580px), screen and (max-width:580px) {
+    .accns-heading { font-size: 54px;}
+}
+
 .accns-grid{
+    /*two part grid with css grid to hold left and right side divs(accns-left and accns-right )*/
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns:  40% 40%/*repeat(auto-fill, minmax(500px, 1fr))*/;
+    grid-template-columns:  40% 40%;
     grid-gap: 20%;
     margin: 4%;
-    
-
 }
+/*At breakpoint grid will display as block*/
+@media screen and (max-device-width: 580px), screen and (max-width:580px) {
+    .accns-grid {
+    display: block;
+    }
+    }
 
 .accns-left, .accns-right {
-    font-family: Montserrat;
+    /*typography for left and right grid columns*/
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 20px;
+    line-height: 30px;
     text-align: right;
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
 }
 .accns-left{
     text-align: left;
 }
 
-@media screen and (max-device-width: 530px), screen and (max-width:530px) {
-    .accns-grid {
-    display: block;
+@media screen and (max-device-width: 580px), screen and (max-width:580px) {
+    .accns-left, .accns-right {
+        font-size: 40px;
+        line-height: 43px;
     }
-    html {
-        font-size: 80%;
-    }
-    }
-
-@media screen and (max-device-width:380px), screen and (max-width:380px) {
-    .accns-grid {
-    display: block;
-    }
-    html {
-        font-size: 120%;
+    .accns-left{
+        margin-bottom: 30px;
     }
     }
